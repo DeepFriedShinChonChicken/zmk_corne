@@ -58,7 +58,7 @@
 
         softoff {
             bindings = <&soft_off>;
-            key-positions = <1 15 29>;
+            key-positions = <>;
         };
     };
 
@@ -92,15 +92,6 @@
 &trans           &msc SCRL_UP    &mkp MB5      &mkp LCLK     &mkp MCLK       &mkp RCLK                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI      &kp SQT
 &trans           &msc SCRL_DOWN  &mkp MB4      &none         &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans                    &mmv MOVE_DOWN                   &none         &none         &trans            &trans             &trans        &trans
                                                &trans        &to 1           &trans                                                                      &trans        &trans        &trans
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
         };
     };
