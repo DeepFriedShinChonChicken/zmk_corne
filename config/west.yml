@@ -2,17 +2,22 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: DeepFriedShinChonChicken
+      url-base: https://github.com/DeepFriedShinChonChicken
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
   projects:
-    - name: eyelash_corne
-      url: https://github.com/a741725193/zmk-new_corne
-      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
+    - name: eyelash_corne
+      url: https://github.com/DeepFriedShinChonChicken/zmk_corne
+      revision: main
+    - name: nice-view-gem
+      remote: DeepFriedShinChonChicken
+      revision: main
   self:
     path: config
