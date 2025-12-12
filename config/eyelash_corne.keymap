@@ -68,30 +68,30 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E         &kp R             &kp T                               &kp UP                &kp Y        &kp U                    &kp I               &kp O    &kp P      &kp BSPC
-&kp LEFT_SHIFT  &kp A  &kp S  &kp D         &kp F             &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                    &kp K               &kp L    &kp ENTER  &kp ENTER
-&kp LCTRL       &kp Z  &kp X  &kp C         &kp V             &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                    &kp COMMA           &kp DOT  &kp FSLH   &kp RSHIFT
-                              &kp LEFT_ALT  &kp LEFT_COMMAND  &lt 1 SPACE                                               &lt 2 SPACE  &mt RIGHT_COMMAND GLOBE  &mt RIGHT_ALT CAPS
+&kp ESC     &kp Q  &kp W  &kp E         &kp R         &kp T                               &kp UP                &kp Y        &kp U                &kp I               &kp O    &kp P      &kp BSPC
+&kp LCTRL   &kp A  &kp S  &kp D         &kp F         &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J                &kp K               &kp L    &kp ENTER  &kp ENTER
+&kp LSHIFT  &kp Z  &kp X  &kp C         &kp V         &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M                &kp COMMA           &kp DOT  &kp FSLH   &kp RSHIFT
+                          &kp LEFT_ALT  &kp LEFT_GUI  &lt 2 SPACE                                               &lt 2 SPACE  &mt RIGHT_GUI GLOBE  &mt RIGHT_ALT CAPS
             >;
         };
 
         lower_layer {
             display-name = "FUNC";
             bindings = <
-&kp NON_US_HASH  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5                                  &sys_reset                    &kp N6  &kp N7  &kp N8  &kp N9      &kp N0    &kp BACKSPACE
-&rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bt BT_NXT                &out OUT_BLE  &soft_off       &out OUT_USB  &none   &none   &none   &kp INSERT  &kp HOME  &kp PG_UP
-&rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &bl BL_CYCLE     &bt BT_PRV  &kp C_MUTE                  &bt BT_CLR_ALL                &none   &none   &none   &kp DEL     &kp END   &kp PG_DN
-                                                   &trans           &trans           &trans                                                                &none   &none   &none
+&kp NON_US_HASH  &kp N1           &kp N2           &kp N3           &kp N4           &kp N5                                     &bt BT_NXT                &kp N6  &kp N7  &kp N8  &kp N9      &kp N0    &kp BACKSPACE
+&rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &bl BL_TOG                   &out OUT_BLE  &soft_off   &out OUT_USB  &none   &none   &none   &kp INSERT  &kp HOME  &kp PG_UP
+&rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &bl BL_CYCLE     &bl BL_SET 10  &kp C_MUTE                  &bt BT_PRV                &none   &none   &none   &kp DEL     &kp END   &kp PG_DN
+                                                   &trans           &to 0            &trans                                                               &none   &none   &none
             >;
         };
 
         raise_layer {
             display-name = "SYM";
             bindings = <
-&kp NON_US_HASH  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK         &kp LPAR           &kp RPAR  &kp BSPC
-&trans           &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI  &kp SQT
-&trans           &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &none      &none      &trans            &trans             &trans    &trans
-                                             &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp NON_US_HASH  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4    &kp NUMBER_5                               &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9       &kp NUMBER_0  &kp BSPC
+&trans           &msc SCRL_UP    &mkp MB5      &mkp LCLK     &mkp MCLK       &mkp RCLK                  &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS     &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMI      &kp SQT
+&trans           &msc SCRL_DOWN  &mkp MB4      &none         &msc SCRL_LEFT  &msc SCRL_RIGHT  &trans                    &mmv MOVE_DOWN                   &none         &none         &trans            &trans             &trans        &trans
+                                               &trans        &to 1           &trans                                                                      &trans        &trans        &trans
             >;
         };
 
