@@ -2,8 +2,6 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: siddhantac
-      url-base: https://github.com/siddhantac
     - name: DeepFriedShinChonChicken
       url-base: https://github.com/DeepFriedShinChonChicken
       # Additional modules containing boards/shields/custom code can be listed here as well.
@@ -18,8 +16,8 @@ manifest:
     - name: eyelash_corne
       url: https://github.com/DeepFriedShinChonChicken/zmk_corne
       revision: main
-    - name: nice-view
-      remote: siddhantac
+    - name: nice-view-gem
+      remote: DeepFriedShinChonChicken
       revision: main
   self:
     path: config
